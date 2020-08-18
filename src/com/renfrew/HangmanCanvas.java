@@ -3,6 +3,11 @@ package com.renfrew;
 import acm.graphics.*;
 public class HangmanCanvas extends GCanvas {
 
+    /**
+     *
+     */
+    private static final long serialVersionUID = 1L;
+
     /** Resets the display so that only the scaffold appears */
     public void reset() {
         /* You fill this in */
@@ -26,7 +31,7 @@ public class HangmanCanvas extends GCanvas {
     }
 
     /* Constants for the simple version of the picture (in pixels) */
-    private static final int SCAFFOLD_HEIGHT = 360;
+    /*private static final int SCAFFOLD_HEIGHT = 360;
     private static final int BEAM_LENGTH = 144;
     private static final int ROPE_LENGTH = 18;
     private static final int HEAD_RADIUS = 36;
@@ -36,6 +41,6 @@ public class HangmanCanvas extends GCanvas {
     private static final int LOWER_ARM_LENGTH = 44;
     private static final int HIP_WIDTH = 36;
     private static final int LEG_LENGTH = 108;
-    private static final int FOOT_LENGTH = 28;
+    private static final int FOOT_LENGTH = 28;*/
 }
 

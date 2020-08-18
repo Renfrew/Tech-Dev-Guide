@@ -1,9 +1,9 @@
 package com.renfrew;
 
-import acm.graphics.GCanvas;
-import acm.graphics.GObject;
-import acm.graphics.GRect;
-import acm.graphics.GRectangle;
+//import acm.graphics.GCanvas;
+//import acm.graphics.GObject;
+//import acm.graphics.GRect;
+//import acm.graphics.GRectangle;
 
 import javax.swing.*;
 import java.io.*;
@@ -19,7 +19,7 @@ public class Hangman {
     private String word = "";
     private int guessLeft = 8;
 
-    private HangmanCanvas canvas;
+    //private HangmanCanvas canvas;
 
     public static void main(String[] args) {
         Hangman game = new Hangman();
@@ -28,7 +28,7 @@ public class Hangman {
     }
 
     public void init() {
-        canvas = new HangmanCanvas();
+        //canvas = new HangmanCanvas();
         JFrame frame = new JFrame("Hangman");
         frame.setSize(600, 400);
         //frame.getContentPane().add(canvas, BorderLayout.CENTER);
