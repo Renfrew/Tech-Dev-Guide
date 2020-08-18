@@ -2,5 +2,8 @@
 .idea/
 *.iml
 
+# Editor
+.vscode/
+
 # Output files
 out/
