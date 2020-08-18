@@ -6,7 +6,6 @@ import acm.graphics.GRect;
 import acm.graphics.GRectangle;
 
 import javax.swing.*;
-import java.awt.*;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.Random;
@@ -111,6 +110,7 @@ public class Hangman {
             System.out.println("Your guess: " + Character.toUpperCase(c));
             currentWord = isGuessed(currentWord, c);
 
+            reader.close();
             if(isWin(currentWord)) {
                 System.out.println("You guessed the word: " + word);
                 System.out.println("You win.");

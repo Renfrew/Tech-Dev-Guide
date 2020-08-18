@@ -1,11 +1,8 @@
 package com.renfrew;
 
 
-public class Interpret {
+public class WordZero {
     public static void main(String[] args) {
-        System.out.println(interpret(1, new String[]{"+"}, new int[]{1}));
-        System.out.println(interpret(4, new String[]{"-"}, new int[]{2}));
-        System.out.println(interpret(1, new String[]{"+", "*"}, new int[]{1, 3}));
         System.out.println();
     }
 
