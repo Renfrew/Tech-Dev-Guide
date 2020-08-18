@@ -1,6 +1,8 @@
 package com.renfrew;
 
 import acm.graphics.GCanvas;
+import acm.graphics.GObject;
+import acm.graphics.GRect;
 import acm.graphics.GRectangle;
 
 import javax.swing.*;
@@ -21,19 +23,23 @@ public class Hangman {
     private HangmanCanvas canvas;
 
     public static void main(String[] args) {
-        GCanvas gc = new GCanvas();
-        JFrame frame = new JFrame();
-        frame.getContentPane().add(BorderLayout.CENTER, gc);
-        GRectangle square = new GRectangle(100, 100, 200, 200);
-        //square.setFilled(true);
-        //square.setColor(Color.RED);
-        //gc.add(square);
-        frame.setVisible(true);
+        Hangman game = new Hangman();
+        //game.init();
+        game.run();
     }
 
     public void init() {
         canvas = new HangmanCanvas();
-        //add(canvas);
+        JFrame frame = new JFrame("Hangman");
+        frame.setSize(600, 400);
+        //frame.getContentPane().add(canvas, BorderLayout.CENTER);
+        //GRect square = new GRect(100, 100, 200, 200);
+        //square.setFilled(true);
+        //square.setFillColor(Color.RED);
+        //canvas.add(square);
+
+        frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+        frame.setVisible(true);
     }
 
     public void run() {
